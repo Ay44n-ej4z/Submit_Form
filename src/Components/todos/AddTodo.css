@@ -1,0 +1,40 @@
+.head{
+    padding: 0px 10px;
+    margin-left: 245px;
+    padding: 20px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 50%;
+  background-color: #abe2e249;
+  flex-direction:column;
+  
+}
+.task {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+.datetime {
+    display:flex;
+    align-items: center;
+    flex-direction:row;
+    justify-content:space-between;    
+}
+
+.btn {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    padding-top: 20px;
+    justify-content:flex-start;
+    padding-left: 10px;
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,14 @@
+.login{
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    justify-content: center;
+    padding: 2%;
+    }
+
+ .input {
+        display: flex;
+        align-items: center;
+        flex-direction:column;
+        padding-bottom: 10px;
+    }
