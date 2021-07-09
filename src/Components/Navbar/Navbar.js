@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from '@material-ui/core';
 import { Link, useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { signOut } from "../../store/action/authActions";
@@ -21,39 +22,33 @@ const NavBar = () => {
     <>
       <div className = "nav" > 
               <Link to="/">
-                toDoApp;
+                Task
               </Link>
             {user._id ? (
               <>
-                  Logged in as {user.name}
-                <button
-                  edge="end"
-                  color="inherit"
+                 <h3> Logged in as {user.name}</h3>
+                <Button          
                   onClick={() => handleSignOut()}
                 >
                 <Link  to="/">
                     SignOut
                   </Link>
-                </button>
+                </Button>
               </>
             ) : (
               <>
-                <button
-                  edge="end"
-                  color="inherit"
-                  >
+                <ul>
                   <Link  to="/signin">
                     SignIn
                   </Link>
-                </button>
-                <button
-                  edge="end"
-                  color="inherit"
+                </ul>
+                <ul
+              
                   >
                   <Link to="/signup">
                     SignUp
                   </Link>
-                </button>
+                </ul>
               </>
             )}
       </div>

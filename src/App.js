@@ -8,7 +8,7 @@ import SignUp from './Components/auth/SignUp';
 import NavBar from './Components/Navbar/Navbar';
 import { loadUser } from "./store/action/authActions";
 import Sidebar from './Components/Sidebar/Sidebar';
-import ControlForm from './Components/todos/ControlForm';
+
 
 
 function App() {
@@ -24,11 +24,9 @@ function App() {
         <Sidebar />
         <NavBar />
           <Switch>
-            {/* <ControlForm />             */}
-            <Route path="/" component={Todos} />
             <Route path="/signin" component={SignIn} />
             <Route path="/signup" component={SignUp} />
-            
+            <Route exact path="/" component={Todos} />            
           </Switch>
         
       </BrowserRouter>

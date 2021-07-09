@@ -1,3 +1,5 @@
+import { Input } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Redirect } from "react-router-dom";
@@ -27,33 +29,34 @@ const SignIn = () => {
         noValidate
         autoComplete="off"
         onSubmit={handleSubmit}
-      >
-        <h3 >Sign In</h3>
+      > <div className = "name">
+        <h3>Sign In</h3>
+        </div>
         <div className = "input">
-        <input
+        <Input
           id="enter-email"
-          label="enterEmail"
+          placeholder="Enter-Email"
           variant="outlined"
           fullWidth
           value={creds.email}
           onChange={(e) => setCreds({ ...creds, email: e.target.value })}
-        ></input>
-        <input
+        ></Input>
+        <Input
           id="enter-password"
           type="password"
-          label="enterPassword"
+          placeholder="Enter-Password"
           variant="outlined"
           fullWidth
           value={creds.password}
           onChange={(e) => setCreds({ ...creds, password: e.target.value })}
-        ></input>
-        <button
+        ></Input>
+        <Button
           variant="contained"
           color="primary"
           type="submit"
         >
           SignIn
-        </button>
+        </Button>
         </div>
       </form>
     </div>

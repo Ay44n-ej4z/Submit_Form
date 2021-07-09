@@ -1,9 +1,11 @@
 .list{
     margin-left: 257px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+    transition: 0.5s;
     width: 40%;
-    background-image: linear-gradient(#807f7fea,  #c7c7c7);
+    background-image: linear-gradient(60deg, #191919,  #292929);
+    color: white;
+    border-radius: 5px
     /* flex-direction:column; */
     
 }
@@ -12,9 +14,9 @@
     padding-top: 2px;
 }
 
-.name {
+.items{
     display: flex;
-    align-items:flex-start;
+    align-items: flex-start;
     flex-direction: column;
-    /* justify-content: right; */
 }
+ 

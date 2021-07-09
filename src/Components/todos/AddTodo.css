@@ -32,9 +32,5 @@
     padding-top: 20px;
     justify-content:flex-start;
     padding-left: 10px;
-}
-
-.user{
-    display: flex;
-    flex-direction: column;
+    padding: 10px;
 }

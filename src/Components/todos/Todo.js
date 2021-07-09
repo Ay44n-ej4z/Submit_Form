@@ -62,13 +62,18 @@ const Todo = ({ todo, setTodo, todos }) => {
               
             </ul>
           ) : (
-            <div className = "name">
+            <div className = "items">
+              <div className = "name">
             <ul>
-              {todo.name}
+            Admin:- {user.name}
+              
               </ul>
+              </div>
+              <div className = "task">
               <ul>
-            User:{user.name}
+           Task:- {todo.name}
            </ul>
+           </div>
            </div>
           )}
           

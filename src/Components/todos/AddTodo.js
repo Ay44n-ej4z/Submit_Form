@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from '@material-ui/core/Button';
 import { useDispatch, useSelector } from 'react-redux';
 import { addTodo, updateTodo } from '../../store/action/todoActions';
 import DatePicker from "react-datepicker";
@@ -95,8 +96,8 @@ const AddTodo = ({ todo, setTodo }) => {
             </select>
             </div>
             <div className = "btn">
-            <button type = "submit" >Save</button>
-            <button>Cancel</button>
+            <Button style = {{backgroundColor: "green"}} variant="contained" color="primary" type = "submit" >Save</Button>
+            <Button style = {{backgroundColor: "green"}} variant="contained" color="primary" type = "submit" >Cancel</Button>
             </div>
             {/* <button>Edit</button> */}
                 </div>
@@ -108,3 +109,8 @@ const AddTodo = ({ todo, setTodo }) => {
 }
  
 export default AddTodo;
+
+
+
+
+
